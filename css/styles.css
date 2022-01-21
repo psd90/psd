@@ -223,6 +223,9 @@ i{
     min-height: 25rem;
     box-shadow: 2px 2px 1rem (rgba(0, 0, 0, .1));
     overflow: hidden;
+    border-radius: 50%;
+    border: 1px outset var(--accent-clr);
+    opacity: 1;
 }
 
 .showcase .image-box{
@@ -235,7 +238,7 @@ i{
     transition: transform .5s;
 }
 .image-box:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .image-left{
     grid-column: 1/4;
