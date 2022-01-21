@@ -17,8 +17,57 @@
 <body>
    <!-- Header -->
    <header class="header" id="header">
-       
+
+       <nav class="nav container" id="nav">
+
+        <a href="./index.html" class="logo">P</a>
+        <div class="nav-mobile">
+            <ul class="list">
+                <li class="list-item">
+                    <a href="#" class="list-link current">Portfolio</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link ">About Me</a>
+                </li>
+                <li class="list-item">
+                    <a href="#" class="list-link ">Skills</a>
+                </li>
+                <li class="list-item lg-screen-hidden">
+                    <a href="#" class="list-link ">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="#" class="btn sm-screen-hidden">Contact Me</a>
+        <div class="menu-toggle-icon lg-screen-hidden place-items-center" id="menu-toggle-icon">
+            <i class="ri-menu-3-line menu-open-icon"></i>
+            <i class="ri-close-fill menu-close-icon"></i>
+        </div>
+       </nav>
    </header>
+
+   <!-- Main -->
+
+   <main>
+       <section class="showcase section" id="showcase">
+           <div class="showcase-container container d-grid">
+               <div class="showcase-data order-2">
+                   <span class="tagline">My work</span>
+                   <h1 class="title main-title">
+                       My Work <span class="accent-text"> Examples</span>
+                   </h1>
+                   <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, incidunt quas eos nisi aspernatur iure expedita. Nulla repellat illo accusamus!</p>
+                   <a href="#" class="btn">Explore</a>
+               </div>
+               <div class="image-group order-1 d-grid">
+                   <div class="image-box image-left">
+                       <img src="./images/" alt="">
+                   </div>
+               </div>
+           </div>
+       </section>
+   </main>
+
 <script src="./js/main.js"></script>    
 </body>
 </html>
