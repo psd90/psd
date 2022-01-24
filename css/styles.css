@@ -108,12 +108,29 @@ i{
     background-color: inherit;
 }
 
-.logo{
-    font-size: var(--margin-md);
-    font-weight: var(--font-weight-bold);
-    color: var(--accent-clr);
-}
 
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+  z-index: 1;
+  font-size:2em;
+  text-align:center;
+  display:block;
+  position:absolute;
+  color: var(--accent-clr);
+  top:0;
+  bottom:0;
+  left:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
 .menu-toggle-icon{
     width: 3.5rem;
     height: 3.5rem;
@@ -216,9 +233,7 @@ i{
 .showcase-container{
     gap: var(--gap-sm);
 }
-.image-group{
-    grid-template-columns: 2rem repeat(2, 1fr) 2rem repeat(2, 1fr) 2rem;
-}
+
 .image-box{
     min-height: 25rem;
     box-shadow: 2px 2px 1rem (rgba(0, 0, 0, .1));
@@ -238,21 +253,33 @@ i{
     transition: transform .5s;
 }
 .image-box:hover img{
-    transform: scale(1.05);
+    transform: scale(1.2);
+    opacity: 0;
+    transition: 0.7s;
 }
+
+img{
+    opacity: 0.97;
+}
+
 .image-left{
-    grid-column: 1/4;
-    grid-row: 1/span 10;
-    z-index: 5;
-}
+    grid-column: 1/3;
+    background-image: url('../images/1.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
+} 
+
 .image-center{
-    grid-column: 3/6;
-    grid-row: 7/span 10;
+    grid-column: 3/5;
+    background-image: url('../images/2.jpg');
+    background-size: 150%;
+    background-repeat: no-repeat;
 }
 .image-right{
-    grid-column: 5/-1;
-    grid-row: 3/span 10;
-    z-index: 5;
+    grid-column: 5/7;
+    background-image: url('../images/3.png');
+    background-size: 100%;
+    background-position-y: 2.5rem;
 }
 .tagline{
     display: inline-block;
@@ -282,10 +309,48 @@ i{
     color: var(--light-clr);
     padding: 1rem 2.5rem;
     transition: background-color .25s;
+    border-radius: .5rem;
 }
 
 .btn:hover{
     background-color: #00be85;
     
 }
-/*  */
+/*about*/
+.about{
+    background:url(../images/night.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 5;
+}
+.about::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: -1;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+}
+.about-container-inner{
+    max-width: 78rem;
+    text-align: center;
+    color: var(--light-clr);
+}
+.btn-light{
+    background-color: var(--light-clr);
+    color: var(--dark-clr);
+}
+.btn-light:hover{
+    color: var(--light-clr);
+}
+/* */
+/* */
+/* */
+/* */
