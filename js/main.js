@@ -29,7 +29,7 @@ window.addEventListener('scroll', headerScrollEvent)
 //animated logo in header
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Hello World....', 'I am P....', 'Welcome to my portfolio!'], 'text',['black','medium turquoise']);
+consoleText(['I am Perminder..', 'Web Developer..', 'Get in touch...'], 'text',['slategray','medium turquoise']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

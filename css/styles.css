@@ -231,6 +231,7 @@ i{
     margin-top: 8rem;
 }
 .showcase-container{
+    padding-top: 9rem;
     gap: var(--gap-sm);
 }
 
@@ -250,7 +251,7 @@ i{
 .image-box img{
     height: 100%;
     object-fit: cover;
-    transition: transform .5s;
+    transition: 1s;
 }
 .image-box:hover img{
     transform: scale(1.2);
@@ -299,6 +300,9 @@ img{
 }
 .accent-text{
     color: var(--accent-clr);
+}
+.accent-text1{
+    color: rgb(0, 87, 187);
 }
 .description{
     margin-bottom: var(--margin-lg);
@@ -350,7 +354,40 @@ img{
 .btn-light:hover{
     color: var(--light-clr);
 }
-/* */
-/* */
+/* skills */
+
+/* carousel */
+
+svg{
+    margin: 2rem;
+}
+ .row {
+     padding-top: 3rem;
+     padding-bottom: 20rem;
+     width: 350%;
+    display: flex;
+    overflow: hidden;
+   }
+ 
+ .imagegroup {
+    display: flex;
+    width: 100%;
+   }
+ 
+
+ 
+ .imagegroup {
+    animation: travel 45s ease-in-out infinite;
+   }
+ 
+ @keyframes travel {
+    0%, 100% {
+       transform: translate3d(0%,0,0);
+     }
+    50% {
+       transform: translate3d(-75%,0,0);
+     }
+  }
+
 /* */
 /* */
