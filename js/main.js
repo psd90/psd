@@ -3,6 +3,7 @@
 const menuToggleIcon = document.getElementById('menu-toggle-icon')
 const navMobile = document.getElementById('nav')
 const headerElement = document.getElementById('header')
+const navLinks = document.querySelectorAll('.nav-mobile .list-link');
 
 //toggle function
 
@@ -25,6 +26,17 @@ const headerScrollEvent = () => {
 }
 
 window.addEventListener('scroll', headerScrollEvent)
+
+
+navLinks.forEach(link => link.addEventListener('click', ()=>{
+  navMobile.classList.remove('active');
+  headerElement.classList.remove('active');  
+
+  let current = document.getElementsByClassName('current');
+  current[0].className = current[0].className.replace(' current', "");
+  link.className += " current";
+}));
+
 
 //animated logo in header
 
@@ -79,3 +91,22 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
+//scroll reveal
+
+const sr = ScrollReveal({
+  distance: '55px',
+  duration: '3500'
+});
+
+sr.reveal(`.image-left`, {
+  origin: 'left'
+});
+sr.reveal(`.image-center , .showcase-data`, {
+  origin: 'bottom'
+});
+sr.reveal(`.image-right`, {
+  origin: 'right'
+});
+
+
