@@ -548,7 +548,23 @@ textarea{
     opacity: 0.8;
 }
 
+@media screen and (max-width: 500px){
 
+    .image-group{
+        transform: scale(0.5);
+        margin-top: -30rem;
+        margin-bottom: -30rem;
+    }
+.image-left{
+    grid-column: 3/3;
+    }
+.image-center{
+    grid-column: 3/3;
+}
+.image-right{
+    grid-column: 3/3;
+}
+}
 
 @media screen and (max-width: 880px){
     .btn-group{
