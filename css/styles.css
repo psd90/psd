@@ -116,7 +116,7 @@ i{
 }
 .console-container {
   z-index: 1;
-  font-size:2em;
+  font-size:2rem;
   text-align:center;
   display:block;
   position:absolute;
@@ -124,7 +124,6 @@ i{
   color: var(--accent-clr);
   top:0;
   bottom:0;
-  left:0;
   margin:auto;
 }
 .console-underscore {
@@ -375,42 +374,16 @@ img{
 
 
 /* skills images */
-.skills-showcase-container{
-    padding-top: 9rem;
-    gap: var(--gap-sm);
-    margin: auto;
-    width: 100%;
+.skills{
+    height: 60px;
+    display: inline;
+    margin-left: 2rem;
+    margin-top: 3rem;
+    transform: translateY(1rem);
 }
 
 
- .skills, .ms{
-    height: 200px;
-    margin-left: 4rem;
-    padding: 3rem;
-    opacity: 0.9;
-    
-   }
- 
- .imagegroup {
-    display: flex;
-    width:100%;
-    justify-content: center;
-	align-items: center;
-   }
- 
-   .imagegroup {
-    animation: travel 50s ease infinite;
-   }
- 
- @keyframes travel {
-    0%, 100% {
-       transform: translate3d(100%,0,0);
-     }
-    50% {
-       transform: translate3d(-100%,0,0);
-     }
-  }
-
+   
 
 
 
@@ -594,22 +567,11 @@ textarea{
     }
 
     .skills{
-    width: auto;
-    padding-top: 5rem;
-    padding-left: 4rem;
+        display: none;
    }
 
- .imagegroup{
-    width: 800%;
- }
- @keyframes travel {
-    0%, 100% {
-       transform: translate3d(-10%,0,0);
-     }
-    50% {
-       transform: translate3d(-76%,0,0);
-     }
-  }
+
+
 
 }
 
