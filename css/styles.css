@@ -328,9 +328,12 @@ img{
     background-color: #00be85;
     
 }
+#about{
+    padding: 15rem;
+}
 /*about*/
 .about{
-    margin-top: 40rem;
+    margin-top: 4rem;
     background:url(../images/night.jpg);
     background-size: cover;
     position: relative;
@@ -380,6 +383,12 @@ img{
     margin-left: 2rem;
     margin-top: 3rem;
     transform: translateY(1rem);
+}
+
+.head{
+    height: 100px;
+    display: inline;
+    transform: translateY(2rem);
 }
 
 
@@ -455,7 +464,7 @@ img{
 	outline: none;
 	background-color: rgba(230, 230, 230, 0.6);
 	padding: 0.5rem 1rem;
-	font-size: 1.1rem;
+	font-size: 2rem;
 	margin-bottom: 22px;
 	transition: .3s;
 }
@@ -473,7 +482,7 @@ textarea{
 	padding: 0.5rem 1rem;
 	background-color: #00be85;
 	color: #fff;
-	font-size: 1.1rem;
+	font-size: 2rem;
 	border: none;
 	outline: none;
 	cursor: pointer;
