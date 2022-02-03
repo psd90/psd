@@ -95,18 +95,13 @@ function consoleText(words, id, colors) {
 //scroll reveal
 
 const sr = ScrollReveal({
-  distance: '55px',
+  distance: '155px',
   duration: '3500'
 });
 
-sr.reveal(`.image-left`, {
-  origin: 'left'
-});
-sr.reveal(`.image-center , .showcase-data`, {
+
+sr.reveal(`.image-left, .image-center , .image-right, .showcase-data`, {
   origin: 'bottom'
-});
-sr.reveal(`.image-right`, {
-  origin: 'right'
 });
 
 
