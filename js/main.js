@@ -41,7 +41,7 @@ navLinks.forEach(link => link.addEventListener('click', ()=>{
 //animated logo in header
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['I am Perminder..', 'Web Developer..', 'Get in touch!'], 'text',['black']);
+consoleText(['I am Perminder..', 'Junior Dev at Developyn', 'Get in touch!'], 'text',['black']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
