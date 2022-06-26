@@ -314,14 +314,27 @@ img{
 .description{
     margin-bottom: var(--margin-lg);
 }
-.btn{
+.btn {
     text-align: center;
-    display: inline-block;
     background-color: var(--accent-clr);
     color: var(--light-clr);
-    padding: 1rem 2.5rem;
+    padding: 1rem;
     transition: background-color .25s;
     border-radius: .5rem;
+    margin: 1rem;
+    max-width: 400px;
+}
+.git {
+    text-align: center;
+    background-color: var(--accent-clr);
+    color: var(--light-clr);
+    padding: 1rem;
+    margin-top: 4rem;
+    transition: background-color .25s;
+    border-radius: .5rem;
+    margin: 1rem;
+    max-width: 400px;
+    float: right;
 }
 
 .btn:hover{
@@ -361,11 +374,9 @@ img{
     color: var(--light-clr);
 }
 .btn-group{
+    max-width: 170px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: var(--gap-md)
-
 }
 .btn-light{
     background-color: var(--light-clr);
@@ -559,6 +570,15 @@ textarea{
 }
 .copyright{
     opacity: 0.8;
+}
+.developyn{
+    color: rgb(0, 162, 255);
+}
+.svelte{
+    color: coral;
+}
+.vue{
+    color: #00be85;
 }
 
 @media screen and (max-width: 500px){
