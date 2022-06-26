@@ -576,7 +576,7 @@ textarea{
     body{
         scale: 0.7;
     }
-    .about-container{
+    .about-container.container{
         min-width: 99%;
     }
     .image-group{
