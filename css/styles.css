@@ -312,6 +312,7 @@ img{
     color: rgb(0, 87, 187);
 }
 .description{
+    text-align: left;
     margin-bottom: var(--margin-lg);
 }
 .btn {
@@ -322,7 +323,7 @@ img{
     transition: background-color .25s;
     border-radius: .5rem;
     margin: 1rem;
-    max-width: 400px;
+    max-width: 200px;
 }
 .git {
     text-align: center;
@@ -333,8 +334,10 @@ img{
     transition: background-color .25s;
     border-radius: .5rem;
     margin: 1rem;
-    max-width: 400px;
-    float: right;
+    max-width: 220px;
+}
+.about-btn{
+    transform: translateX(10%)
 }
 
 .btn:hover{
@@ -366,25 +369,13 @@ img{
 
 .about-container{
     display: flex;
-    justify-content: center;
 }
 .about-container-inner{
     max-width: 78rem;
     text-align: center;
     color: var(--light-clr);
 }
-.btn-group{
-    max-width: 170px;
-    display: flex;
-    flex-direction: column;
-}
-.btn-light{
-    background-color: var(--light-clr);
-    color: var(--dark-clr);
-}
-.btn-light:hover{
-    color: var(--light-clr);
-}
+
 
 
 /* skills images */
@@ -582,7 +573,12 @@ textarea{
 }
 
 @media screen and (max-width: 500px){
-
+    body{
+        scale: 0.7;
+    }
+    .about-container{
+        min-width: 99%;
+    }
     .image-group{
         transform: scale(0.5);
         margin-top: -30rem;
