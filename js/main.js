@@ -18,17 +18,17 @@ menuToggleIcon.addEventListener('click', toggleMenu);
 // header border on scroll
 
 const headerScrollEvent = () => {
-    if(this.scrollY >= 30){
-        headerElement.classList.add('active-scroll')
-    }else{
-        headerElement.classList.remove('active-scroll')
+    if (this.scrollY >= 30) {
+        headerElement.classList.add('active-scroll');
+    } else {
+        headerElement.classList.remove('active-scroll');
     }
 }
 
-window.addEventListener('scroll', headerScrollEvent)
+window.addEventListener('scroll', headerScrollEvent);
 
 
-navLinks.forEach(link => link.addEventListener('click', ()=>{
+navLinks.forEach(link => link.addEventListener('click', () => {
   navMobile.classList.remove('active');
   headerElement.classList.remove('active');  
 
@@ -41,7 +41,7 @@ navLinks.forEach(link => link.addEventListener('click', ()=>{
 //animated logo in header
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['I am Perminder..', 'Junior Dev at Developyn', 'Get in touch!'], 'text',['black']);
+consoleText(['I am Perminder..', 'Developer at Developyn', 'Get in touch!'], 'text',['black']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
